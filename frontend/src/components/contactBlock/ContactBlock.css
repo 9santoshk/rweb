@@ -1,0 +1,52 @@
+.contact-page {
+  padding: 30px;
+  margin: 30px;
+}
+.contact-page__title {
+  font-size: 19.2px;
+}
+.contact-page__columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .contact-page__columns {
+    justify-content: space-between;
+  }
+}
+.contact-page__column {
+  flex: 1 1 100%;
+}
+.contact-page__column-title {
+  font-size: 17.6px;
+}
+@media screen and (min-width: 768px) {
+  .contact-page__column {
+    flex: 0 0 48%;
+  }
+}
+.contact-page__form {
+  padding: 30px;
+  margin: 30px;
+}
+.contact-page__form label {
+  font-size: 14.4px;
+}
+.contact-page__form input,
+.contact-page__form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 30px;
+  font-size: 16px;
+}
+@media screen and (max-width: 767px) {
+  .contact-page__form input,
+  .contact-page__form textarea {
+    font-size: 14.4px;
+  }
+}
+.contact-page__form button {
+  margin-top: 10px;
+  padding: 30px;
+  font-size: 16px;
+}/*# sourceMappingURL=ContactBlock.css.map */

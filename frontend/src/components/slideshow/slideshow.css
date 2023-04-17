@@ -1,0 +1,38 @@
+.slideshow {
+  width: 100%;
+  height: 400px;
+  padding: 16px;
+  position: relative;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+}
+.slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=slideshow.css.map */

@@ -1,0 +1,123 @@
+// @import 'your-scss-library'; /* Import the necessary SCSS library */
+
+/* Define a primary color variable */
+$primary-color: #f2f3f3;
+
+/* Define a secondary color variable */
+$secondary-color: #6c757d;
+
+/* Define a font size variable */
+$font-size: 16px;
+
+/* Define a margin variable */
+$margin: 10px;
+
+/* Define a padding variable */
+$padding: 10px;
+
+/* Define a border radius variable */
+$border-radius: 5px;
+
+/* Define a transition duration variable */
+$transition-duration: 0.3s;
+
+/* Define a hover scale variable */
+$hover-scale: 1.05;
+
+/* Define a navigation style */
+.nav {
+  background-color: $primary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    color: #000; /* Update text color to black */
+    text-decoration: none;
+    font-size: $font-size;
+    padding: $padding;
+    border-radius: $border-radius;
+
+    &-icon {
+      margin-right: $margin;
+    }
+  }
+
+  &__menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+
+    &-item {
+      margin-right: $margin;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-link {
+        color: #000; /* Update text color to black */
+        text-decoration: none;
+        font-size: $font-size;
+        padding: $padding;
+        border-radius: $border-radius;
+        transition: background-color $transition-duration;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          background-color: darken($primary-color, 10%);
+        }
+
+        &.active {
+          background-color: darken($primary-color, 20%);
+        }
+
+        &-icon {
+          margin-right: $margin;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    color: #000; /* Update text color to black */
+    text-decoration: none;
+    font-size: $font-size;
+    padding: $padding;
+    border-radius: $border-radius;
+    transition: background-color $transition-duration;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+
+  &__toggle {
+    display: none; /* Hide toggle initially */
+    @media (max-width: 767px) {
+      /* Show toggle in mobile view */
+      display: block;
+      margin-right: $margin;
+    }
+  }
+
+  @media (max-width: 767px) {
+    /* Hide menu items in mobile view */
+    &__menu {
+      display: none;
+      &.active {
+        flex-direction: column;
+        display: flex;
+        align-items: center; 
+        &-item {
+            margin-right: 0; /* Remove margin-right for mobile view */
+          }
+      }
+    }
+  }
+}

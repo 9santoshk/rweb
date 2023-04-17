@@ -1,0 +1,41 @@
+.camera-and-image-capture {
+  display: flex;
+  align-items: center;
+
+  .camera-container,
+  .image-container {
+    flex: 1;
+    padding: 1rem;
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .camera-container {
+    .video-element {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+
+    .buttons-container {
+      margin-top: 1rem;
+
+      button {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .image-container {
+    .captured-image {
+      width: 100%;
+      height: auto;
+    }
+
+    .no-image-message {
+      margin-top: 1rem;
+    }
+  }
+}

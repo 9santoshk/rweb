@@ -1,0 +1,73 @@
+// ContactBlock.scss
+
+// Define variables for common styles
+$font-size: 16px;
+$form-padding: 30px;
+$input-margin-bottom: 10px;
+$button-margin-top: 10px;
+
+.contact-page {
+  // Set overall padding and margin
+  padding: $form-padding;
+  margin: $form-padding;
+
+  &__title {
+    // Adjust font size for smaller screens
+    font-size: $font-size * 1.2;
+  }
+
+  &__columns {
+    display: flex;
+    flex-wrap: wrap;
+
+    // Set two-column layout for computer view
+    @media screen and (min-width: 768px) {
+      justify-content: space-between;
+    }
+  }
+
+  &__column {
+    flex: 1 1 100%;
+
+    &-title {
+      // Adjust font size for smaller screens
+      font-size: $font-size * 1.1;
+    }
+
+    // Set one-column layout for mobile view
+    @media screen and (min-width: 768px) {
+      flex: 0 0 48%;
+    }
+  }
+
+  &__form {
+    // Add padding and margin to form
+    padding: $form-padding;
+    margin: $form-padding;
+
+    label {
+      // Adjust font size for smaller screens
+      font-size: $font-size * 0.9;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      margin-bottom: $input-margin-bottom;
+      padding: $form-padding;
+      font-size: $font-size;
+
+      // Add additional styles for smaller screens
+      @media screen and (max-width: 767px) {
+        // Adjust font size for smaller screens
+        font-size: $font-size * 0.9;
+      }
+    }
+
+    button {
+      margin-top: $button-margin-top;
+      padding: $form-padding;
+      font-size: $font-size;
+    }
+  }
+}

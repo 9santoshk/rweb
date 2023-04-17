@@ -36,19 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
-
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
-
-/* color and styling */
-:root{
-  --PrimaryColor: hsi(199,100%,33%);
-  --SecondaryColor: hsi(187,85%,43%);
-}

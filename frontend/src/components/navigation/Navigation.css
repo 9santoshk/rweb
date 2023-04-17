@@ -1,0 +1,96 @@
+/* Define a primary color variable */
+/* Define a secondary color variable */
+/* Define a font size variable */
+/* Define a margin variable */
+/* Define a padding variable */
+/* Define a border radius variable */
+/* Define a transition duration variable */
+/* Define a hover scale variable */
+/* Define a navigation style */
+.nav {
+  background-color: #f2f3f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+  color: #000; /* Update text color to black */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.nav__logo-icon {
+  margin-right: 10px;
+}
+.nav__menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+.nav__menu-item {
+  margin-right: 10px;
+}
+.nav__menu-item:last-child {
+  margin-right: 0;
+}
+.nav__menu-item-link {
+  color: #000; /* Update text color to black */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+.nav__menu-item-link:hover {
+  background-color: #d7dbdb;
+}
+.nav__menu-item-link.active {
+  background-color: #bdc2c2;
+}
+.nav__menu-item-link-icon {
+  margin-right: 10px;
+}
+.nav__cta {
+  color: #000; /* Update text color to black */
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.nav__cta:hover {
+  background-color: #d7dbdb;
+}
+.nav__toggle {
+  display: none; /* Hide toggle initially */
+}
+@media (max-width: 767px) {
+  .nav__toggle {
+    /* Show toggle in mobile view */
+    display: block;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .nav {
+    /* Hide menu items in mobile view */
+  }
+  .nav__menu {
+    display: none;
+  }
+  .nav__menu.active {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .nav__menu.active-item {
+    margin-right: 0; /* Remove margin-right for mobile view */
+  }
+}/*# sourceMappingURL=Navigation.css.map */

@@ -1,0 +1,31 @@
+.camera-and-image-capture {
+  display: flex;
+  align-items: center;
+}
+.camera-and-image-capture .camera-container,
+.camera-and-image-capture .image-container {
+  flex: 1;
+  padding: 1rem;
+}
+.camera-and-image-capture .camera-container h2,
+.camera-and-image-capture .image-container h2 {
+  margin-top: 0;
+}
+.camera-and-image-capture .camera-container .video-element {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+.camera-and-image-capture .camera-container .buttons-container {
+  margin-top: 1rem;
+}
+.camera-and-image-capture .camera-container .buttons-container button {
+  margin-right: 0.5rem;
+}
+.camera-and-image-capture .image-container .captured-image {
+  width: 100%;
+  height: auto;
+}
+.camera-and-image-capture .image-container .no-image-message {
+  margin-top: 1rem;
+}/*# sourceMappingURL=PassportBlock.css.map */
